@@ -5,9 +5,11 @@ from time import time
 app = Flask(__name__)
 db = []
 
+
 @app.route('/')
 def index():
 	return '<a href="/status">STATUS</a>'
+
 
 @app.route('/status')
 def status():
